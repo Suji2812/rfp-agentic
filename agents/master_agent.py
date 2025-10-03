@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from agents.sales_agent import get_rfp_by_id
 from agents.technical_agent import match_products, load_products
 from agents.pricing_agent import estimate_pricing, load_pricing_table
@@ -26,3 +28,4 @@ def run_rfp_pipeline(rfp_id, top_n=3):
         "recommendations": enriched,
         "pdf": pdf_bytes
     }
+
