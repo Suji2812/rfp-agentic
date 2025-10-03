@@ -1,5 +1,6 @@
 import pandas as pd
-import os
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 PRICING_PATH = os.path.join(DATA_DIR, "pricing.csv")
@@ -33,3 +34,4 @@ def estimate_pricing(sku: str, quantity: int, tests_required: list, pricing_df=N
         "material_cost": material_cost,
         "total_cost": total_cost
     }
+
