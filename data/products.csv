@@ -1,0 +1,4 @@
+sku,name,conductor_material,insulation,voltage,cross_section_mm2
+CABLE_A,Copper XLPE 11kV,copper,XLPE,11kV,95
+CABLE_B,Copper PVC 1kV,copper,PVC,1kV,2.5
+CABLE_C,Aluminium XLPE 11kV,aluminium,XLPE,11kV,95

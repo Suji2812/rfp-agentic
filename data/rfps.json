@@ -1,0 +1,28 @@
+[
+  {
+    "id": "RFP001",
+    "title": "Supply of 11kV XLPE Copper Cables",
+    "deadline": "2025-10-30",
+    "quantity": 1000,
+    "specs": {
+      "conductor_material": "copper",
+      "insulation": "XLPE",
+      "voltage": "11kV",
+      "cross_section_mm2": 95
+    },
+    "tests_required": ["tensile_test", "insulation_resistance"]
+  },
+  {
+    "id": "RFP002",
+    "title": "Supply of 1kV PVC Cables",
+    "deadline": "2025-11-15",
+    "quantity": 2000,
+    "specs": {
+      "conductor_material": "copper",
+      "insulation": "PVC",
+      "voltage": "1kV",
+      "cross_section_mm2": 2.5
+    },
+    "tests_required": ["insulation_resistance"]
+  }
+]
