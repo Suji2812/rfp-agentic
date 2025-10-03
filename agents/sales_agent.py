@@ -1,5 +1,6 @@
 import json
-import os
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 RFPS_PATH = os.path.join(DATA_DIR, "rfps.json")
@@ -19,3 +20,4 @@ def get_rfp_by_id(rfp_id):
         if r.get("id") == rfp_id:
             return r
     return None
+
