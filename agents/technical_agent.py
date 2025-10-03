@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from utils.spec_match import compute_spec_match
 import pandas as pd
 from utils.spec_match import compute_spec_match
 import os
@@ -43,3 +46,4 @@ def match_products(rfp_specs: dict, products_df=None, top_n=3):
     # sort descending by score
     results.sort(key=lambda x: x["score"], reverse=True)
     return results[:top_n]
+
