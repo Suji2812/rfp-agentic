@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
@@ -63,3 +65,4 @@ def generate_pdf_report(rfp: dict, recommendations: list):
     pdf = buffer.getvalue()
     buffer.close()
     return pdf
+
