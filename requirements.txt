@@ -1,8 +1,9 @@
 plotly
 pillow
-streamlit
+streamlit==1.32.0
 pandas
 reportlab
 matplotlib
 difflib3 ; python_version < "3.9"  # sequence matcher is builtin, this is just safe
+
 
